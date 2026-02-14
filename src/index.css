@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+
+html.light {
+  --bg: #ffffff;
+  --card: #f2f2f7;
+  --text: #0b0b0f;
+}
+
+html.dark {
+  --bg: #0b0b0f;
+  --card: #11162a;
+  --text: #ffffff;
+}
+
+html.pink {
+  --bg: #ffe8f5;
+  --card: #ffd6ef;
+  --text: #5a0034;
+
+  --accent: #ff4fa0;
+  --accent-soft: #ffb6d9;
+}
+
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
